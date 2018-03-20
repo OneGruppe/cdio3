@@ -9,6 +9,7 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-9">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -17,6 +18,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/dino/Documents/mysql-connector-java-5.1.26/mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/dino/Documents/Eclipse workspace/VP_CDIO_del_3/Connector/mysql-connector-java-5.1.26-bin.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
