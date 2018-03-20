@@ -34,7 +34,8 @@ public class TestCon{
 			return false;
 		} catch (SQLException e) {
 			// Could not connect to the database
-			System.out.println(e.getMessage()); return false;
+			System.out.println(e.getMessage()); 
+			return false;
 		}
 		return true; 
 	}
