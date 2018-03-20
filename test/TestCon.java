@@ -1,10 +1,9 @@
-import java.sql.Connection; 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
-
-import com.mysql.jdbc.Statement;
 
 public class TestCon{
 
@@ -45,7 +44,7 @@ public class TestCon{
 		String query = "SELECT * FROM Lokaler WHERE Bygning='" + building + "'";
 
 		try {
-			Statement stmt = (Statement) connection.createStatement();
+			Statement stmt = connection.createStatement();
 			ResultSet rs = stmt.executeQuery(query); 
 			while (rs.next()) {
 				String room = rs.getString("Lokalenr.");
