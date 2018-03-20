@@ -17,8 +17,8 @@ public class TestCon{
 	//String url ="jdbc:mysql://91.100.3.26:9865/projektoplaeg3";
 	String url ="jdbc:mysql://91.100.3.26:9865/SkoleDatabasen";
 
-	String username = "Niklaes"; // You should modify this.
-	String password = "Niklaeskode";
+	String username = "Eclipse-bruger"; // You should modify this.
+	String password = "ySmTL37uDjYZmzyn";
 
 	public boolean doConnection(){ 
 		try {
