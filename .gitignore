@@ -46,7 +46,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-### Eclipse ###
+### Eclipse
 .metadata
 bin/
 tmp/
@@ -60,10 +60,4 @@ local.properties
 .recommenders
 .launch
 .project
-
-### Eclipse Patch ###
-# Eclipse Core
-
-# JDT-specific (Eclipse Java Development Tools)		
-.classpath
-/.classpath
+*.classpath
