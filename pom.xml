@@ -13,12 +13,17 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat8-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
 		</plugins>
 	</build>
-	
+
 	<properties>
-   		<maven.compiler.source>9.0.4</maven.compiler.source>
-   		<maven.compiler.target>9.0.4</maven.compiler.target>
+		<maven.compiler.source>9.0.4</maven.compiler.source>
+		<maven.compiler.target>9.0.4</maven.compiler.target>
 	</properties>
 
 </project>
