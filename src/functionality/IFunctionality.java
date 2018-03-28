@@ -1,5 +1,7 @@
 package functionality;
 
+import data.*;
+
 public interface IFunctionality {
 	
 
