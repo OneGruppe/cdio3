@@ -18,6 +18,7 @@ users.sav
 
 ### Maven
 /target/
+target
 
 ### macOS
 .DS_Store
