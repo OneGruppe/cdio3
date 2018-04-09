@@ -1,7 +1,18 @@
 $(document).ready(function(){
     $("#createUserContainer").hide();
+    $("#showAllUsersContainer").hide();
+    $("#showUserContainer").hide();
+
+    $("#frontPage").click(function(){
+        $("#createUserContainer").hide(500);
+        $("#showAllUsersContainer").hide(500);
+        $("#ShowUserContainer").hide(500);
+    })
+
     $("#createUser").click(function(){
         $("#frontPage").hide(500);
+        $("#showAllUsersContainer").hide(500);
+        $("#showUserContainer").hide(500);
         $("#createUserContainer").show(500);
     })
 
