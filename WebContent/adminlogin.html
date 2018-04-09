@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery-3.1.1.js"></script>
-    <script src = "js/javascript.js"></script>
+    <script>
+    	$(document).ready(function(){
+        	$("#createUser").click(function(){
+        		alert("Test virker");
+        	})
+        	$("#showAllUsers").click(function(){
+            	alert("Test virker");
+        	})
+    	});
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -13,9 +22,9 @@
         Adminlogin
     </h1>
 
-    <button>Opret bruger</button>
-    <button>Se alle brugere</button>
-    <button>Se bruger</button>
-    <button>Log ud</button>
+    <button id="createUser">Opret bruger</button>
+    <button id="showAllUsers">Se alle brugere</button>
+    <button id="showUser">Se bruger</button>
+    <button id="logout">Log ud</button>
 </body>
 </html>
