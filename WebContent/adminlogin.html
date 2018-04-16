@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="jquery-3.3.1.js"></script>
-    <script src = "js/login.js"></script>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script src="jquery-3.3.1.js"></script>
+<script src="js/login.js"></script>
+
 </head>
-<div>
-    <body>
-        <h1>
-            Adminlogin
-        </h1>
-        <div id = "frontPage">
-            <button id="createUser">Create User</button>
-            <button id="showAllUsers">Show all users</button>
-            <button id="showUser">Show user</button>
-            <button id="logout">Log Out</button>
-        </div>
-        <div id = "createUserContainer">
-                <body>
-                        <h1>
-                            Create User
-                        </h1>
-                        <button>Front Page</button>
-                        <button>Show all users</button>
-                        <button>Show user</button>
-                        <button>Log out</button>
-                        <br>
-                        <form id = username>
-                            Username
-                            <input type = "text" name = "username" autofocus>
-                            Password
-                            <input type = "password" name = "password">
-                            Initials
-                            <input type = "text" name = "ini">
-                            CPR-number
-                            <input type = "text" name = "CPR">
-                            Role
-                            <input type = "text" name = "role">
-                            <button>Create User</button>
-                        </form>
-                    </body>
-        </div>
-        
-    </body>
+<body>
+	<h1>Adminlogin</h1>
+	<div id="frontPage">
+		<button id="createUser">Create User</button>
+		<button id="showAllUsers">Show all users</button>
+		<button id="showUser">Show user</button>
+		<button id="logout">Log Out</button>
+	</div>
+	<div id="createUserContainer">
+		<h1>Create User</h1>
+		<button>Front Page</button>
+		<button>Show all users</button>
+		<button>Show user</button>
+		<button>Log out</button>
+		<br>
+		<form id=username>
+			Username <input type="text" name="username" autofocus>
+			Password <input type="password" name="password"> Initials <input
+				type="text" name="ini"> CPR-number <input type="text"
+				name="CPR"> Role <input type="text" name="role">
+			<button>Create User</button>
+		</form>
+	</div>
+</body>
 </html>
