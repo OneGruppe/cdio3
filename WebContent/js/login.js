@@ -1,33 +1,37 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $("#createUserContainer").hide();
     $("#showAllUsersContainer").hide();
     $("#showUserContainer").hide();
 
-    $("#frontPage").click(function(){
+    $("#frontPage").click(function() {
         $("#createUserContainer").hide(500);
         $("#showAllUsersContainer").hide(500);
         $("#ShowUserContainer").hide(500);
     })
 
-    $("#createUser").click(function(){
+    $("#createUser").click(function() {
         $("#frontPage").hide(500);
         $("#showAllUsersContainer").hide(500);
         $("#showUserContainer").hide(500);
         $("#createUserContainer").show(500);
     })
 
-    $("#showAllUsers").click(function()
-    {
-         alert("Test virker");
+    $("#showAllUsers").click(function() {
+         $("frontPage").hide(500);
+         $("showUserContainer").hide(500);
+         $("createUserContainer").hide(500);
+         $("showAllUsersContainer").show(500);
+
     })
     
-    $("#showUser").click(function() 
-    {
-        alert("Test virker");		        		
+    $("#showUser").click(function() {
+        $("frontPage").hide(500);
+        $("createUserContainer").hide(500);
+        $("showAllUsersContainer").hide(500);
+        $("showUserContainer").show(500);
     })
     
-    $("#logout").click(function() 
-    {
+    $("#logout").click(function() {
         alert("Test virker");		        		
     })
 });
