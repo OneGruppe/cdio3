@@ -4,18 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Show all users</title>
+<title>Show users</title>
 <script src="jquery-3.3.1.js"></script>
 <script src="js/login.js"></script>
-
 </head>
-<h1>Admin login</h1>
-<h2>Admin options</h2>
 <body>
-	<div id=adminButtons>
-		<button id=createUser>Create User</button>
-		<button id=showUser>Show user</button>
-		<button id=logout>Log out</button>
-	</div>
+
 </body>
 </html>
