@@ -13,13 +13,13 @@ public class TestCon{
 	Connection connection = null;
 
 	String driverName = "com.mysql.jdbc.Driver";
-
+	
 	String serverName = "91.100.3.26"; // Use this server. 
 	String portNumber = "9865";
-	//String url ="jdbc:mysql://91.100.3.26:9865/projektoplaeg3";
-	String url ="jdbc:mysql://91.100.3.26:9865/CDIO3";
+	String projectName = "CDIO3";
+	String url ="jdbc:mysql://" + serverName + ":" + portNumber + "/" + projectName;
 
-	String username = "Eclipse-bruger"; // You should modify this.
+	String username = "Eclipse-bruger"; 
 	String password = "ySmTL37uDjYZmzyn";
 
 	public boolean doConnection(){ 
