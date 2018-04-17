@@ -1,11 +1,13 @@
 $(document).ready(function() {
-    $("#createUser").load("createUser.html");
+    $("#createUserButton").click(function() {
+        load("createUser.html");
+    });
     
-    $("#showUser").click(function() {
+    $("#showUserButton").click(function() {
         alert("show User test DING");
     })
     
-    $("#logout").click(function() {
+    $("#logoutButton").click(function() {
         alert("Tilbage til login side");		        		
     })
 });
