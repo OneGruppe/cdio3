@@ -1,5 +1,3 @@
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -16,10 +14,10 @@ public class TestCon{
 
 	String serverName = "91.100.3.26"; // Use this server. 
 	String portNumber = "9865";
-	//String url ="jdbc:mysql://91.100.3.26:9865/projektoplaeg3";
-	String url ="jdbc:mysql://91.100.3.26:9865/CDIO3";
+	String projectName = "CDIO3";
+	String url ="jdbc:mysql://" + serverName + ":" + portNumber + "/" + projectName;
 
-	String username = "Eclipse-bruger"; // You should modify this.
+	String username = "Eclipse-bruger"; 
 	String password = "ySmTL37uDjYZmzyn";
 
 	public boolean doConnection(){ 
@@ -49,11 +47,9 @@ public class TestCon{
 		try {
 			Statement stmt = connection.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
-			int i = 1;
 			while (rs.next()) {
 				String room = rs.getString("role");
-				roomsArray.add("Rolle " + i + ": " + room);
-				i++;
+				roomsArray.add("Rolle " + rs.getString("id") + ": " + room);
 			}
 			return roomsArray;
 
