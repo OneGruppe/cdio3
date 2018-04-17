@@ -1,5 +1,3 @@
-package test;
-
 public class TestMain {
 
 	public static void main(String[] args) {
@@ -14,7 +12,7 @@ public class TestMain {
 		}
 		
 		//Print rooms in building
-		for(String room : con.roomsInBuilding("303")) {
+		for(String room : con.showListOfRoles()) {
 			System.out.println(room);
 		}
 	}
