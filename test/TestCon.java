@@ -14,10 +14,10 @@ public class TestCon{
 
 	String driverName = "com.mysql.jdbc.Driver";
 
-	String serverName = "nasdino.myds.me"; // Use this server. 
+	String serverName = "91.100.3.26"; // Use this server. 
 	String portNumber = "9865";
 	//String url ="jdbc:mysql://91.100.3.26:9865/projektoplaeg3";
-	String url ="jdbc:mysql://91.100.3.26:9865/SkoleDatabasen";
+	String url ="jdbc:mysql://91.100.3.26:9865/CDIO3";
 
 	String username = "Eclipse-bruger"; // You should modify this.
 	String password = "ySmTL37uDjYZmzyn";
@@ -42,16 +42,18 @@ public class TestCon{
 		return true; 
 	}
 
-	public ArrayList<String> roomsInBuilding(String building) {
+	public ArrayList<String> showListOfRoles() {
 		ArrayList<String> roomsArray = new ArrayList<String>();
-		String query = "SELECT * FROM Lokaler WHERE Bygning='" + building + "'";
+		String query = "SELECT * FROM roles";
 
 		try {
 			Statement stmt = connection.createStatement();
-			ResultSet rs = stmt.executeQuery(query); 
+			ResultSet rs = stmt.executeQuery(query);
+			int i = 1;
 			while (rs.next()) {
-				String room = rs.getString("Lokalenr.");
-				roomsArray.add("Lokale: " + room);
+				String room = rs.getString("role");
+				roomsArray.add("Rolle " + i + ": " + room);
+				i++;
 			}
 			return roomsArray;
 
